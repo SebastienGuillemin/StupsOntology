@@ -1,0 +1,22 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix stups: <http://www.stups.fr/ontologies/2023/stups/> .
+
+stups:ProfilChimiqueHeroine
+    a rdfs:Class, sh:NodeShape ;
+    sh:targetClass stups:ProfilChimiqueHeroine ; 
+    sh:property [
+        sh:path stups:aPic ;
+        sh:minCount 6 ;
+        sh:maxCount 6 ;
+    ] ;
+.
+stups:ProfilChimiqueCocaine
+    a rdfs:Class, sh:NodeShape ;
+    sh:targetClass stups:ProfilChimiqueCocaine ; 
+    sh:property [
+        sh:path stups:aPic ;
+        sh:minCount 7 ;
+        sh:maxCount 18 ;
+    ] ;
+.

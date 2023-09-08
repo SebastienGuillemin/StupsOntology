@@ -1,0 +1,807 @@
+@prefix : <urn:absolute:stups#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:absolute:stups#> .
+
+<urn:absolute:stups> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aAspectExterne
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aAspectExterne> rdf:type owl:ObjectProperty ;
+                                                                                                     rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                     owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estAspectExterneDe> ;
+                                                                                                     rdf:type owl:FunctionalProperty ,
+                                                                                                              owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aAspectInterne
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aAspectInterne> rdf:type owl:ObjectProperty ;
+                                                                                                     rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                     owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estAspectInterneDe> ;
+                                                                                                     rdf:type owl:FunctionalProperty ,
+                                                                                                              owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aDepartement
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aDepartement> rdf:type owl:ObjectProperty ;
+                                                                                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                   owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansRegion> ;
+                                                                                                   rdf:type owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aEchantillon
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aEchantillon> rdf:type owl:ObjectProperty ;
+                                                                                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                   owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/provientDe> ;
+                                                                                                   rdf:type owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aLotInterne
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aLotInterne> rdf:type owl:ObjectProperty ;
+                                                                                                  rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                  owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estLotInterneDe> ;
+                                                                                                  rdf:type owl:InverseFunctionalProperty ,
+                                                                                                           owl:IrreflexiveProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aPaysDestination
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aPaysDestination> rdf:type owl:ObjectProperty ;
+                                                                                                       rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                       owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estPaysDestinationDe> ;
+                                                                                                       rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aPic
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aPic> rdf:type owl:ObjectProperty ;
+                                                                                           rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                           rdf:type owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aPrelevement
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aPrelevement> rdf:type owl:ObjectProperty ;
+                                                                                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                   owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansScelle> ;
+                                                                                                   rdf:type owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aPrincipeActif
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aPrincipeActif> rdf:type owl:ObjectProperty ;
+                                                                                                     rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                     owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estPrincipeActifDe> ;
+                                                                                                     rdf:type owl:FunctionalProperty ,
+                                                                                                              owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aProfil
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aProfil> rdf:type owl:ObjectProperty ;
+                                                                                              rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                              owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estProfilDe> ;
+                                                                                              rdf:type owl:FunctionalProperty ,
+                                                                                                       owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aRegion
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aRegion> rdf:type owl:ObjectProperty ;
+                                                                                              rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                              owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansPays> ;
+                                                                                              rdf:type owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aScelle
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aScelle> rdf:type owl:ObjectProperty ;
+                                                                                              rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                              owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansSaisine> ;
+                                                                                              rdf:type owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aServiceCapteur
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aServiceCapteur> rdf:type owl:ObjectProperty ;
+                                                                                                      rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                      owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estServiceCapteurDe> ;
+                                                                                                      rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aServiceRequerant
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aServiceRequerant> rdf:type owl:ObjectProperty ;
+                                                                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                        owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estServiceRequerantDe> ;
+                                                                                                        rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aVille
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aVille> rdf:type owl:ObjectProperty ;
+                                                                                             rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                             owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansDepartement> ;
+                                                                                             rdf:type owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/contientEchantillon
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/contientEchantillon> rdf:type owl:ObjectProperty ;
+                                                                                                          rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                          owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansLot> ;
+                                                                                                          rdf:type owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estAspectExterneDe
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estAspectExterneDe> rdf:type owl:ObjectProperty ;
+                                                                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                         rdf:type owl:FunctionalProperty ,
+                                                                                                                  owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estAspectInterneDe
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estAspectInterneDe> rdf:type owl:ObjectProperty ;
+                                                                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                         rdf:type owl:FunctionalProperty ,
+                                                                                                                  owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansDepartement
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansDepartement> rdf:type owl:ObjectProperty ;
+                                                                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                         rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansLot
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansLot> rdf:type owl:ObjectProperty ;
+                                                                                                 rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                 rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansPays
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansPays> rdf:type owl:ObjectProperty ;
+                                                                                                  rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                  rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansRegion
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansRegion> rdf:type owl:ObjectProperty ;
+                                                                                                    rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                    rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansSaisine
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansSaisine> rdf:type owl:ObjectProperty ;
+                                                                                                     rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                     rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansScelle
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansScelle> rdf:type owl:ObjectProperty ;
+                                                                                                    rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                    rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estFaitA
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estFaitA> rdf:type owl:ObjectProperty ;
+                                                                                               rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                               owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estLieuSaisineDe> ;
+                                                                                               rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estLieA
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estLieA> rdf:type owl:ObjectProperty ;
+                                                                                              rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                              rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estLieuSaisineDe
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estLieuSaisineDe> rdf:type owl:ObjectProperty ;
+                                                                                                       rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                       rdf:type owl:InverseFunctionalProperty ;
+                                                                                                       rdfs:domain <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Ville> ;
+                                                                                                       rdfs:range <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Saisine> .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estLotInterneDe
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estLotInterneDe> rdf:type owl:ObjectProperty ;
+                                                                                                      rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                      rdf:type owl:IrreflexiveProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estPaysDestinationDe
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estPaysDestinationDe> rdf:type owl:ObjectProperty ;
+                                                                                                           rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                           rdf:type owl:InverseFunctionalProperty ;
+                                                                                                           rdfs:domain <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Pays> ;
+                                                                                                           rdfs:range <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Saisine> .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estPrincipeActifDe
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estPrincipeActifDe> rdf:type owl:ObjectProperty ;
+                                                                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                         rdf:type owl:FunctionalProperty ,
+                                                                                                                  owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estProcheDe
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estProcheDe> rdf:type owl:ObjectProperty ;
+                                                                                                  rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                  owl:inverseOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estProcheDe> ;
+                                                                                                  rdf:type owl:IrreflexiveProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estProfilDe
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estProfilDe> rdf:type owl:ObjectProperty ;
+                                                                                                  rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                  rdf:type owl:FunctionalProperty ,
+                                                                                                           owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estServiceCapteurDe
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estServiceCapteurDe> rdf:type owl:ObjectProperty ;
+                                                                                                          rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                          rdf:type owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estServiceRequerantDe
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estServiceRequerantDe> rdf:type owl:ObjectProperty ;
+                                                                                                            rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                            rdf:type owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estSitueA
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estSitueA> rdf:type owl:ObjectProperty ;
+                                                                                                rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/provientDe
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/provientDe> rdf:type owl:ObjectProperty ;
+                                                                                                 rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                 rdf:type owl:FunctionalProperty .
+
+
+###  urn:absolute:stups#aFormeChimique
+:aFormeChimique rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                owl:inverseOf :estFormeChimiqueDe ;
+                rdf:type owl:InverseFunctionalProperty .
+
+
+###  urn:absolute:stups#aMolecule
+:aMolecule rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           owl:inverseOf :estMoleculeDe ;
+           rdf:type owl:FunctionalProperty .
+
+
+###  urn:absolute:stups#aProduitDeCoupage
+:aProduitDeCoupage rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   owl:inverseOf :estProduitDeCoupageDe ;
+                   rdf:type owl:InverseFunctionalProperty .
+
+
+###  urn:absolute:stups#estFormeChimiqueDe
+:estFormeChimiqueDe rdf:type owl:ObjectProperty .
+
+
+###  urn:absolute:stups#estMoleculeDe
+:estMoleculeDe rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdf:type owl:InverseFunctionalProperty .
+
+
+###  urn:absolute:stups#estProduitDeCoupageDe
+:estProduitDeCoupageDe rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdf:type owl:FunctionalProperty .
+
+
+###  urn:absolute:stups#estRepresenteePar
+:estRepresenteePar rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   owl:inverseOf :representeMolecule ;
+                   rdf:type owl:InverseFunctionalProperty .
+
+
+###  urn:absolute:stups#estVilleService
+:estVilleService rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdf:type owl:InverseFunctionalProperty ;
+                 rdfs:domain <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Ville> ;
+                 rdfs:range <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Service> .
+
+
+###  urn:absolute:stups#representeMolecule
+:representeMolecule rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdf:type owl:FunctionalProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect> rdf:type owl:Class ;
+                                                                                             owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                                   owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                   owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estAspectExterneDe> ;
+                                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Echantillon>
+                                                                                                                                 ]
+                                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                                   owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estAspectInterneDe> ;
+                                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Echantillon>
+                                                                                                                                 ]
+                                                                                                                               )
+                                                                                                                 ] .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Departement
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Departement> rdf:type owl:Class ;
+                                                                                                  owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aVille> ;
+                                                                                                                                               owl:someValuesFrom <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Ville>
+                                                                                                                                             ]
+                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansRegion> ;
+                                                                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                               owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Region>
+                                                                                                                                             ]
+                                                                                                                                           ) ;
+                                                                                                                        rdf:type owl:Class
+                                                                                                                      ] .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Echantillon
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Echantillon> rdf:type owl:Class ;
+                                                                                                  owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty :aProduitDeCoupage ;
+                                                                                                                                               owl:someValuesFrom :ProduitCoupage
+                                                                                                                                             ]
+                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estProcheDe> ;
+                                                                                                                                               owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                                                                                                               owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Echantillon>
+                                                                                                                                             ]
+                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aAspectExterne> ;
+                                                                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                               owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect>
+                                                                                                                                             ]
+                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aAspectInterne> ;
+                                                                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                               owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect>
+                                                                                                                                             ]
+                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aPrincipeActif> ;
+                                                                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                               owl:onClass :PrincipeActif
+                                                                                                                                             ]
+                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aProfil> ;
+                                                                                                                                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                               owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ProfilChimique>
+                                                                                                                                             ]
+                                                                                                                                           ) ;
+                                                                                                                        rdf:type owl:Class
+                                                                                                                      ] .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Lot
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Lot> rdf:type owl:Class ;
+                                                                                          owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                       owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/contientEchantillon> ;
+                                                                                                                                       owl:someValuesFrom <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Echantillon>
+                                                                                                                                     ]
+                                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                                       owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aLotInterne> ;
+                                                                                                                                       owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                                                                                                       owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Lot>
+                                                                                                                                     ]
+                                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                                       owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estLotInterneDe> ;
+                                                                                                                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                       owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Lot>
+                                                                                                                                     ]
+                                                                                                                                   ) ;
+                                                                                                                rdf:type owl:Class
+                                                                                                              ] .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Molecule
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Molecule> rdf:type owl:Class ;
+                                                                                               owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                                     owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                     owl:onProperty :estMoleculeDe ;
+                                                                                                                                     owl:someValuesFrom <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Substance>
+                                                                                                                                   ]
+                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                     owl:onProperty :estRepresenteePar ;
+                                                                                                                                     owl:someValuesFrom <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Pic>
+                                                                                                                                   ]
+                                                                                                                                 )
+                                                                                                                   ] .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Pays
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Pays> rdf:type owl:Class ;
+                                                                                           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                 owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aRegion> ;
+                                                                                                                 owl:someValuesFrom <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Region>
+                                                                                                               ] .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Pic
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Pic> rdf:type owl:Class ;
+                                                                                          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                owl:onProperty :representeMolecule ;
+                                                                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Molecule>
+                                                                                                              ] .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Prelevement
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Prelevement> rdf:type owl:Class ;
+                                                                                                  owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aEchantillon> ;
+                                                                                                                                               owl:someValuesFrom <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Echantillon>
+                                                                                                                                             ]
+                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansScelle> ;
+                                                                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                               owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Scelle>
+                                                                                                                                             ]
+                                                                                                                                           ) ;
+                                                                                                                        rdf:type owl:Class
+                                                                                                                      ] .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ProfilChimique
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ProfilChimique> rdf:type owl:Class ;
+                                                                                                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                           owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aPic> ;
+                                                                                                                           owl:someValuesFrom <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Pic>
+                                                                                                                         ] .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ProfilChimiqueCocaine
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ProfilChimiqueCocaine> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ProfilChimique> ;
+                                                                                                            owl:disjointWith <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ProfilChimiqueHeroine> .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ProfilChimiqueHeroine
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ProfilChimiqueHeroine> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ProfilChimique> .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Region
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Region> rdf:type owl:Class ;
+                                                                                             owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                          owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aDepartement> ;
+                                                                                                                                          owl:someValuesFrom <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Departement>
+                                                                                                                                        ]
+                                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                                          owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansPays> ;
+                                                                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                          owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Pays>
+                                                                                                                                        ]
+                                                                                                                                      ) ;
+                                                                                                                   rdf:type owl:Class
+                                                                                                                 ] .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Saisine
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Saisine> rdf:type owl:Class ;
+                                                                                              owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                           owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aScelle> ;
+                                                                                                                                           owl:someValuesFrom <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Scelle>
+                                                                                                                                         ]
+                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                           owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aPaysDestination> ;
+                                                                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                           owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Pays>
+                                                                                                                                         ]
+                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                           owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aServiceCapteur> ;
+                                                                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                           owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ServiceCapteur>
+                                                                                                                                         ]
+                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                           owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aServiceRequerant> ;
+                                                                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                           owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ServiceRequerant>
+                                                                                                                                         ]
+                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                           owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estFaitA> ;
+                                                                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                           owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Ville>
+                                                                                                                                         ]
+                                                                                                                                       ) ;
+                                                                                                                    rdf:type owl:Class
+                                                                                                                  ] .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Scelle
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Scelle> rdf:type owl:Class ;
+                                                                                             owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                          owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aPrelevement> ;
+                                                                                                                                          owl:someValuesFrom <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Prelevement>
+                                                                                                                                        ]
+                                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                                          owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansSaisine> ;
+                                                                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                          owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Saisine>
+                                                                                                                                        ]
+                                                                                                                                      ) ;
+                                                                                                                   rdf:type owl:Class
+                                                                                                                 ] .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Service
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Service> rdf:type owl:Class ;
+                                                                                              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                    owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estSitueA> ;
+                                                                                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                    owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Ville>
+                                                                                                                  ] .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ServiceCapteur
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ServiceCapteur> rdf:type owl:Class ;
+                                                                                                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                           owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estServiceCapteurDe> ;
+                                                                                                                           owl:someValuesFrom <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Saisine>
+                                                                                                                         ] ;
+                                                                                                     rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Service> ;
+                                                                                                     owl:disjointWith <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ServiceRequerant> .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ServiceRequerant
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ServiceRequerant> rdf:type owl:Class ;
+                                                                                                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                             owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estServiceRequerantDe> ;
+                                                                                                                             owl:someValuesFrom <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Saisine>
+                                                                                                                           ] ;
+                                                                                                       rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Service> .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Substance
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Substance> rdf:type owl:Class ;
+                                                                                                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                      owl:onProperty :aMolecule ;
+                                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                      owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Molecule>
+                                                                                                                    ] .
+
+
+###  http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Ville
+<http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Ville> rdf:type owl:Class ;
+                                                                                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansDepartement> ;
+                                                                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                  owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Departement>
+                                                                                                                ] .
+
+
+###  urn:absolute:stups#Base
+:Base rdf:type owl:Class ;
+      rdfs:subClassOf :FormeChimique .
+
+
+###  urn:absolute:stups#BaseEtHCL
+:BaseEtHCL rdf:type owl:Class ;
+           rdfs:subClassOf :FormeChimique .
+
+
+###  urn:absolute:stups#Billes
+:Billes rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect> .
+
+
+###  urn:absolute:stups#Cailloux
+:Cailloux rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect> .
+
+
+###  urn:absolute:stups#Chlorhydrate
+:Chlorhydrate rdf:type owl:Class ;
+              rdfs:subClassOf :FormeChimique .
+
+
+###  urn:absolute:stups#Comprimes
+:Comprimes rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect> .
+
+
+###  urn:absolute:stups#Cristaux
+:Cristaux rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect> .
+
+
+###  urn:absolute:stups#FormeChimique
+:FormeChimique rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty :estFormeChimiqueDe ;
+                                     owl:someValuesFrom :PrincipeActif
+                                   ] .
+
+
+###  urn:absolute:stups#Gelules
+:Gelules rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect> .
+
+
+###  urn:absolute:stups#HCL
+:HCL rdf:type owl:Class ;
+     rdfs:subClassOf :FormeChimique .
+
+
+###  urn:absolute:stups#Huiles
+:Huiles rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect> .
+
+
+###  urn:absolute:stups#Indetermine
+:Indetermine rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect> .
+
+
+###  urn:absolute:stups#Indeterminee
+:Indeterminee rdf:type owl:Class ;
+              rdfs:subClassOf :FormeChimique .
+
+
+###  urn:absolute:stups#Liquides
+:Liquides rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect> .
+
+
+###  urn:absolute:stups#Pates
+:Pates rdf:type owl:Class ;
+       rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect> .
+
+
+###  urn:absolute:stups#Phosphate
+:Phosphate rdf:type owl:Class ;
+           rdfs:subClassOf :FormeChimique .
+
+
+###  urn:absolute:stups#Poudres
+:Poudres rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect> .
+
+
+###  urn:absolute:stups#PrincipeActif
+:PrincipeActif rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estPrincipeActifDe> ;
+                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                            owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Echantillon>
+                                                          ]
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :aFormeChimique ;
+                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                            owl:onClass :FormeChimique
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Substance> .
+
+
+###  urn:absolute:stups#ProduitCoupage
+:ProduitCoupage rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty :estProduitDeCoupageDe ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Echantillon>
+                                    ] ;
+                rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Substance> .
+
+
+###  urn:absolute:stups#Resines
+:Resines rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect> .
+
+
+###  urn:absolute:stups#SubstancesDissimulees
+:SubstancesDissimulees rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect> .
+
+
+###  urn:absolute:stups#Sulfate
+:Sulfate rdf:type owl:Class ;
+         rdfs:subClassOf :FormeChimique .
+
+
+###  urn:absolute:stups#Timbres
+:Timbres rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect> .
+
+
+###  urn:absolute:stups#Vegetaux
+:Vegetaux rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Aspect> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  urn:absolute:stups#Echantillon
+:Echantillon rdf:type owl:NamedIndividual ,
+                      <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Echantillon> .
+
+
+###  urn:absolute:stups#Pays
+:Pays rdf:type owl:NamedIndividual ,
+               <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Pays> .
+
+
+###  urn:absolute:stups#Prelevement
+:Prelevement rdf:type owl:NamedIndividual ,
+                      <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/Prelevement> ;
+             <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aEchantillon> :Echantillon .
+
+
+###  urn:absolute:stups#Saisine
+:Saisine rdf:type owl:NamedIndividual ;
+         <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aPaysDestination> :Pays ;
+         <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aScelle> :Scelle ;
+         <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aServiceCapteur> :ServiceCapteur ;
+         <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aServiceRequerant> :ServiceRequerant .
+
+
+###  urn:absolute:stups#Scelle
+:Scelle rdf:type owl:NamedIndividual ;
+        <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/aPrelevement> :Prelevement ;
+        <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/estDansSaisine> :Saisine .
+
+
+###  urn:absolute:stups#ServiceCapteur
+:ServiceCapteur rdf:type owl:NamedIndividual ,
+                         <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ServiceCapteur> .
+
+
+###  urn:absolute:stups#ServiceRequerant
+:ServiceRequerant rdf:type owl:NamedIndividual ,
+                           <http://www.semanticweb.org/sebastienguillemin/ontologies/2023/2/untitled-ontology-2/ServiceRequerant> .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Base
+                :BaseEtHCL
+                :Chlorhydrate
+                :HCL
+                :Indeterminee
+                :Phosphate
+                :Sulfate
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Billes
+                :Cailloux
+                :Comprimes
+                :Cristaux
+                :Gelules
+                :Huiles
+                :Indetermine
+                :Liquides
+                :Pates
+                :Poudres
+                :Resines
+                :SubstancesDissimulees
+                :Timbres
+                :Vegetaux
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
