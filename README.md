@@ -4,7 +4,8 @@ Ce dépôt contient une ontologie décrivant les connaissances des experts de la
 
 La dernière version de l'ontologie se trouve à la racine du dépôt. Les versions précédentes sont disponibles dans le dossier "/old".
 
-Si vous utilisez cette ontologie (ou une partie de cette ontologie), veuillez citer notre travail comme suit :
+## Utiliser cette ontologie
+Si vous utilisez cette ontologie (ou une partie de cette ontologie), veuillez citer notre travail comme suit :\
 Sébastien GUILLEMIN, Laurence DUJOURDY, Ludovic JOURNAUX, Ana ROXIN: Ontologie STUPS&copy;, 2024, *Laboratoire d'Informatique de Bourgogne*, disponible en ligne: https://github.com/SebastienGuillemin/StupsOntology.git.
 
 # STUPS&copy; ontology (EN)
@@ -13,5 +14,6 @@ This repository contains an ontology describing the knowledge of French scientif
 
 The last version of the ontology can be found at the root of the repository. Previous versions are available in the folder "/old".
 
-If you use this ontology (or a part of this ontology), please cite our work using as follows:
+## Use this ontology
+If you use this ontology (or a part of this ontology), please cite our work using as follows:\
 Sébastien GUILLEMIN, Laurence DUJOURDY, Ludovic JOURNAUX, Ana ROXIN: STUPS&copy; Ontology, 2024, *Laboratoire d'Informatique de Bourgogne*, available online: https://github.com/SebastienGuillemin/StupsOntology.git.
