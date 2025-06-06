@@ -6,24 +6,45 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
 @base <http://www.stups.fr/ontologies/2023/stups/#> .
 
 <http://www.stups.fr/ontologies/2023/stups/> rdf:type owl:Ontology ;
                                               owl:versionIRI <http://www.stups.fr/ontologies/2023/stups/6.0.0> ;
-                                              dct:description "This ontology describes the knowledge of French scientific experts used in illicit drug analysis." ,
-                                                              "https://github.com/SebastienGuillemin/StupsOntology/blob/master/STUPS.ttl" ;
-                                              dct:title "STUPS ontology" .
+                                              dct:accessRights "Open access" ,
+                                                               "https://creativecommons.org/licenses/by/4.0/" ;
+                                              dct:description "This ontology describes the knowledge of French scientific experts used in illicit drug analysis." ;
+                                              dct:rights "Use restricted to research purposes" ;
+                                              dct:title "STUPS ontology" ;
+                                              schema:license "https://creativecommons.org/licenses/by/4.0/" ;
+                                              dcat:accessURL "https://github.com/SebastienGuillemin/StupsOntology/blob/master/STUPS.ttl" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
+###  http://purl.org/dc/terms/accessRights
+dct:accessRights rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/description
 dct:description rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/license
+dct:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+dct:rights rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/title
 dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/license
+schema:license rdf:type owl:AnnotationProperty .
 
 
 ###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
