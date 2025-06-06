@@ -1,7 +1,6 @@
 @prefix : <http://www.stups.fr/ontologies/2023/stups/#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix pav: <http://purl.org/pav> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -12,7 +11,7 @@
 
 <http://www.stups.fr/ontologies/2023/stups/> rdf:type owl:Ontology ;
                                               owl:versionIRI <http://www.stups.fr/ontologies/2023/stups/6.1.0> ;
-                                              pav:authoredBy "Sébastien GUILLEMIN" ;
+                                              dct:creator "Sébastien GUILLEMIN" ;
                                               dct:accessRights "Open access" ;
                                               dct:description "This ontology describes the knowledge of French scientific experts used in illicit drug analysis." ;
                                               dct:hasVersion "6.1.0" ;
