@@ -9,7 +9,8 @@
 @prefix schema: <http://schema.org/> .
 @base <http://www.stups.fr/ontologies/2023/stups/#> .
 
-<http://www.stups.fr/ontologies/2023/stups/> rdf:type owl:Ontology ;
+<http://www.stups.fr/ontologies/2023/stups/>  rdf:type owl:Ontology ;
+                                              a dcat:Dataset ;
                                               owl:versionIRI <http://www.stups.fr/ontologies/2023/stups/6.0.0> ;
                                               dct:accessRights "Open access" ;
                                               dct:description "This ontology describes the knowledge of French scientific experts used in illicit drug analysis." ;
@@ -17,6 +18,8 @@
                                               dct:title "STUPS ontology" ;
                                               dct:license "https://creativecommons.org/licenses/by/4.0/" ;
                                               schema:license "https://creativecommons.org/licenses/by/4.0/" ;
+                                              dct:issued "2025-06-06"^^xsd:date ;
+                                              dct:hasVersion "6.1.0" ;
                                               dcat:accessURL "https://github.com/SebastienGuillemin/StupsOntology/blob/master/STUPS.ttl" .
 
 #################################################################
