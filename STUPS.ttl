@@ -1,5 +1,5 @@
 @prefix : <http://www.stups.fr/ontologies/2023/stups/#> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -28,7 +28,7 @@
                                               dct:references <https://www.w3.org/TR/owl2-overview/>,
                                                 <http://dbpedia.org/resource/Forensic_science> ,
                                                 <https://www.w3.org/TR/vocab-dcat-2/>,
-                                                <http://purl.org/dc/terms/>,
+                                                <http://purl.org/dc/terms/1.1/>,
                                                 <https://schema.org/>,
                                                 <https://www.police-nationale.interieur.gouv.fr/nous-decouvrir/notre-organisation/organisation/service-national-de-police-scientifique-snps>,
                                                 <https://raw.githubusercontent.com/SebastienGuillemin/StupsOntology/master/STUPS.ttl> .    # Documentation
