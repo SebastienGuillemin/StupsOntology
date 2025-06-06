@@ -20,7 +20,15 @@
                                               dct:license <https://creativecommons.org/licenses/by/4.0/> ;
                                               dct:rights "Use restricted to research purposes" ;
                                               dct:title "STUPS ontology" ;
-                                              dcat:accessURL <https://raw.githubusercontent.com/SebastienGuillemin/StupsOntology/master/STUPS.ttl> .
+                                              dcat:accessURL <https://raw.githubusercontent.com/SebastienGuillemin/StupsOntology/master/STUPS.ttl> ;
+
+                                              # References to external ressources related to this ontology
+                                              dct:references <https://www.w3.org/TR/owl2-overview/> ;
+                                              dct:references <https://www.w3.org/TR/vocab-dcat-2/> ;
+                                              dct:references <http://purl.org/dc/terms/> ;
+                                              dct:references <https://schema.org/> ;
+                                              dct:references <https://www.police-nationale.interieur.gouv.fr/nous-decouvrir/notre-organisation/organisation/service-national-de-police-scientifique-snps> ;
+                                              dct:references <https://raw.githubusercontent.com/SebastienGuillemin/StupsOntology/master/STUPS.ttl> .    # Documentation
 
 
 
