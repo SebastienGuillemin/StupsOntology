@@ -1,17 +1,30 @@
 @prefix : <http://www.stups.fr/ontologies/2023/stups/#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://www.stups.fr/ontologies/2023/stups/#> .
 
 <http://www.stups.fr/ontologies/2023/stups/> rdf:type owl:Ontology ;
-                                              owl:versionIRI <http://www.stups.fr/ontologies/2023/stups/6.0.0> .
+                                              owl:versionIRI <http://www.stups.fr/ontologies/2023/stups/6.0.0> ;
+                                              dct:description "This ontology describes the knowledge of French scientific experts used in illicit drug analysis." ,
+                                                              "https://github.com/SebastienGuillemin/StupsOntology/blob/master/STUPS.ttl" ;
+                                              dct:title "STUPS ontology" .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/terms/description
+dct:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
 
 ###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
@@ -19,6 +32,10 @@
 
 ###  http://www.stups.fr/ontologies/2023/stups/#pic
 :pic rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#accessURL
+dcat:accessURL rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -256,6 +273,14 @@
           rdf:type owl:FunctionalProperty .
 
 
+###  http://www.stups.fr/ontologies/2023/stups/#estPotentiellementProcheDe
+:estPotentiellementProcheDe rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty ;
+                            rdf:type owl:SymmetricProperty ;
+                            rdfs:domain :Echantillon ;
+                            rdfs:range :Echantillon .
+
+
 ###  http://www.stups.fr/ontologies/2023/stups/#estPrincipeActifDe
 :estPrincipeActifDe rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf owl:topObjectProperty ;
@@ -279,13 +304,6 @@
              rdf:type owl:SymmetricProperty ,
                       owl:TransitiveProperty ,
                       owl:IrreflexiveProperty ;
-             rdfs:domain :Echantillon ;
-             rdfs:range :Echantillon .
-
-###  http://www.stups.fr/ontologies/2023/stups/#estPotentiellementProcheDe
-:estPotentiellementProcheDe rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
-             rdf:type owl:SymmetricProperty ;
              rdfs:domain :Echantillon ;
              rdfs:range :Echantillon .
 
@@ -358,23 +376,6 @@
 #################################################################
 #    Data properties
 #################################################################
-
-###  http://www.stups.fr/ontologies/2023/stups/#tauxCBD
-:tauxCBD rdf:type owl:DatatypeProperty ;
-                                                   rdfs:domain :Echantillon .
-
-
-###  http://www.stups.fr/ontologies/2023/stups/#tauxCBN
-:tauxCBN rdf:type owl:DatatypeProperty ;
-                                                   rdfs:domain :Echantillon ;
-                                                   rdfs:range xsd:float .
-
-
-###  http://www.stups.fr/ontologies/2023/stups/#tauxTHC
-:tauxTHC rdf:type owl:DatatypeProperty ;
-                                                   rdfs:domain :Echantillon ;
-                                                   rdfs:range xsd:float .
-
 
 ###  http://www.stups.fr/ontologies/2023/stups/#abime
 :abime rdf:type owl:DatatypeProperty ;
@@ -848,6 +849,23 @@
       rdfs:subPropertyOf :caracteristiqueMacroscopique ;
       rdf:type owl:FunctionalProperty ;
       rdfs:range xsd:float .
+
+
+###  http://www.stups.fr/ontologies/2023/stups/#tauxCBD
+:tauxCBD rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Echantillon .
+
+
+###  http://www.stups.fr/ontologies/2023/stups/#tauxCBN
+:tauxCBN rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Echantillon ;
+         rdfs:range xsd:float .
+
+
+###  http://www.stups.fr/ontologies/2023/stups/#tauxTHC
+:tauxTHC rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Echantillon ;
+         rdfs:range xsd:float .
 
 
 ###  http://www.stups.fr/ontologies/2023/stups/#tempsRetention
