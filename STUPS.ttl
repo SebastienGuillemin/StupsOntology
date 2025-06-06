@@ -18,21 +18,73 @@
                                               dct:hasVersion "6.1.0" ;
                                               dct:issued "2025-06-06"^^xsd:date ;
                                               dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                              dct:references <http://dbpedia.org/resource/Forensic_science> ,
+                                                             dct: ,
+                                                             <https://raw.githubusercontent.com/SebastienGuillemin/StupsOntology/master/STUPS.ttl> ,
+                                                             <https://schema.org/> ,
+                                                             <https://www.police-nationale.interieur.gouv.fr/nous-decouvrir/notre-organisation/organisation/service-national-de-police-scientifique-snps> ,
+                                                             <https://www.w3.org/TR/owl2-overview/> ,
+                                                             <https://www.w3.org/TR/vocab-dcat-2/> ;
                                               dct:rights "Use restricted to research purposes" ;
                                               dct:title "STUPS ontology" ;
-                                              dcat:mediaType "text/turtle" ;
-                                              dcat:accessURL <https://raw.githubusercontent.com/SebastienGuillemin/StupsOntology/master/STUPS.ttl> ;
                                               schema:codeRepository <https://github.com/SebastienGuillemin/StupsOntology> ;
+                                              dcat:accessURL <https://raw.githubusercontent.com/SebastienGuillemin/StupsOntology/master/STUPS.ttl> ;
+                                              dcat:mediaType "text/turtle" .
 
-                                              # References to external ressources related to this ontology
-                                              dct:references <https://www.w3.org/TR/owl2-overview/>,
-                                                <http://dbpedia.org/resource/Forensic_science> ,
-                                                <https://www.w3.org/TR/vocab-dcat-2/>,
-                                                <http://purl.org/dc/terms/>,
-                                                <https://schema.org/>,
-                                                <https://www.police-nationale.interieur.gouv.fr/nous-decouvrir/notre-organisation/organisation/service-national-de-police-scientifique-snps>,
-                                                <https://raw.githubusercontent.com/SebastienGuillemin/StupsOntology/master/STUPS.ttl> .    # Documentation
+#################################################################
+#    Annotation properties
+#################################################################
 
+###  http://purl.org/dc/terms/accessRights
+dct:accessRights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+dct:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dct:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dct:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/hasVersion
+dct:hasVersion rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dct:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dct:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/references
+dct:references rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+dct:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/codeRepository
+schema:codeRepository rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#accessURL
+dcat:accessURL rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#mediaType
+dcat:mediaType rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -301,16 +353,6 @@ xsd:date rdf:type rdfs:Datatype .
                                   owl:IrreflexiveProperty ;
                          rdfs:domain :Echantillon ;
                          rdfs:range :Echantillon .
-
-
-###  http://www.stups.fr/ontologies/2023/stups/#estProcheDe
-:estProcheDe rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
-             rdf:type owl:SymmetricProperty ,
-                      owl:TransitiveProperty ,
-                      owl:IrreflexiveProperty ;
-             rdfs:domain :Echantillon ;
-             rdfs:range :Echantillon .
 
 
 ###  http://www.stups.fr/ontologies/2023/stups/#estProduitCoupageDe
@@ -1002,7 +1044,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                           owl:someValuesFrom :ProduitCoupage
                                                         ]
                                                         [ rdf:type owl:Restriction ;
-                                                          owl:onProperty :estProcheDe ;
+                                                          owl:onProperty :estLieA ;
                                                           owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
                                                           owl:onClass :Echantillon
                                                         ]
