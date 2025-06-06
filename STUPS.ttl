@@ -28,46 +28,6 @@
 #    Annotation properties
 #################################################################
 
-###  http://purl.org/pavauthoredBy
-pav:authoredBy rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/pavcreatedWith
-pav:createdWith rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/accessRights
-dct:accessRights rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/description
-dct:description rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/hasVersion
-dct:hasVersion rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/issued
-dct:issued rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/license
-dct:license rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/rights
-dct:rights rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/title
-dct:title rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/license
-schema:license rdf:type owl:AnnotationProperty .
-
-
 ###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
 
