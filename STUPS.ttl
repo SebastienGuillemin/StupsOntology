@@ -329,15 +329,6 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subPropertyOf owl:topObjectProperty ;
           rdf:type owl:FunctionalProperty .
 
-
-###  http://www.stups.fr/ontologies/2023/stups/#estPotentiellementProcheDe
-:estPotentiellementProcheDe rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf owl:topObjectProperty ;
-                            rdf:type owl:SymmetricProperty ;
-                            rdfs:domain :Echantillon ;
-                            rdfs:range :Echantillon .
-
-
 ###  http://www.stups.fr/ontologies/2023/stups/#estPrincipeActifDe
 :estPrincipeActifDe rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf owl:topObjectProperty ;
