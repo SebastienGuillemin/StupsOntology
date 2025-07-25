@@ -970,13 +970,12 @@ xsd:date rdf:type rdfs:Datatype .
                                      owl:oneOf ( :Base
                                                  :BaseEtHCL
                                                  :Chlorhydrate
-                                                 :HCL
                                                  :Indeterminee
                                                  :Phosphate
                                                  :Sulfate
                                                )
                                    ] ;
-               rdfs:comment "Une forme chimique est associée à un principe actif pour décrire sa forme chimique. Les formes chimiques considérées dans l'ontologie STUPS sont : Base, HCL, Base et HCL, Sulfate, Chlorhydrate, Phosphate ou Indéterminée." .
+               rdfs:comment "Une forme chimique est associée à un principe actif pour décrire sa forme chimique. Les formes chimiques considérées dans l'ontologie STUPS sont : Base, Base et HCL, Sulfate, Chlorhydrate, Phosphate ou Indéterminée." .
 
 
 ###  http://www.stups.fr/ontologies/2023/stups/#Pays
@@ -1280,12 +1279,6 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.stups.fr/ontologies/2023/stups/#Chlorhydrate
 :Chlorhydrate rdf:type owl:NamedIndividual ,
                        :FormeChimique .
-
-
-###  http://www.stups.fr/ontologies/2023/stups/#HCL
-:HCL rdf:type owl:NamedIndividual ,
-              :FormeChimique .
-
 
 ###  http://www.stups.fr/ontologies/2023/stups/#Indeterminee
 :Indeterminee rdf:type owl:NamedIndividual ,
